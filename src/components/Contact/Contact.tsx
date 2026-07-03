@@ -11,6 +11,7 @@ export function Contact({ data }: ContactProps) {
   if (data.email) links.push({ label: 'email', href: `mailto:${data.email}`, text: data.email })
   if (data.telegram) links.push({ label: 'telegram', href: `https://t.me/${data.telegram}`, text: `@${data.telegram}` })
   if (data.github) links.push({ label: 'github', href: `https://github.com/${data.github}`, text: data.github })
+  if (data.gitlab) links.push({ label: 'gitlab', href: `https://gitlab.com/${data.gitlab}`, text: data.gitlab })
   if (data.hh) links.push({ label: 'hh', href: data.hh, text: 'HeadHunter' })
 
   if (links.length === 0) return null

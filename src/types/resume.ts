@@ -29,6 +29,7 @@ export interface Contacts {
   email?: string
   telegram?: string
   github?: string
+  gitlab?: string
   hh?: string
 }
 
