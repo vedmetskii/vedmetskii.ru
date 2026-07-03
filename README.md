@@ -28,15 +28,33 @@ HH_TOKEN=токен HH_RESUME_ID=id_резюме npm run fetch-hh
 
 Скрипт обновит `experience` в `src/data/resume.json`, остальные поля не тронет.
 
-## Сборка и деплой
+## CI/CD (GitHub Actions)
+
+| Триггер | Workflow | Действие |
+|---------|----------|----------|
+| Push в `main` (включая merge PR) | `deploy.yml` | Сборка → публикация на GitHub Pages |
+| PR в `main` / Push в любую другую ветку | `ci.yml` | Проверка: `npm run lint` + `npm run build` |
+
+### GitHub Secrets
+
+Для автоматического обновления опыта с hh.ru при деплое, добавь в **Settings → Secrets and variables → Actions**:
+
+| Secret | Значение |
+|--------|---------|
+| `HH_TOKEN` | Access Token от OAuth-приложения на dev.hh.ru |
+| `HH_RESUME_ID` | ID твоего резюме (из URL: `hh.ru/resume/<ID>`) |
+
+Если Secrets не заданы — опыт не будет подтягиваться, но деплой всё равно выполнится. Данные будут из `src/data/resume.json`.
+
+### Локальный деплой
 
 ```bash
 npm run build     # сборка в dist/
-npm run deploy    # сборка + публикация на GitHub Pages
+npm run deploy    # публикация на GitHub Pages
 ```
 
 ### Кастомный домен
 
 Для своего домена:
 - Настрой CNAME/A-запись на GitHub Pages
-- В конфиг Vite `base: '/'` (уже стоит)
+- В конфиг Vite `base: '/'` (уже стоит по умолчанию)
