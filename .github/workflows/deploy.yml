@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      HH_TOKEN: ${{ secrets.HH_TOKEN }}
+      HH_RESUME_ID: ${{ secrets.HH_RESUME_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,11 +31,8 @@ jobs:
       - run: npm ci
 
       - name: Fetch experience from hh.ru
-        if: ${{ secrets.HH_TOKEN && secrets.HH_RESUME_ID }}
+        if: env.HH_TOKEN != '' && env.HH_RESUME_ID != ''
         run: npm run fetch-hh
-        env:
-          HH_TOKEN: ${{ secrets.HH_TOKEN }}
-          HH_RESUME_ID: ${{ secrets.HH_RESUME_ID }}
 
       - run: npm run build
 
