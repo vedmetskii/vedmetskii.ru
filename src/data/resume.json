@@ -2,9 +2,32 @@
   "name": "Ведмецкий Кирилл Антонович",
   "title": "DevOps Engineer",
   "location": "Санкт-Петербург",
-  "about": "",
-  "experience": [],
-  "skills": [],
+  "about": "Я middle DevOps инженер с трёх летним опытом, имею опыт с основными инструментами автоматизации. Есть опыт поддержки кубернетис кластра bare metal в течение 2 лет.",
+  "experience": [
+    {
+      "company": "Спорт Софт",
+      "position": "DevOps инженер",
+      "description": "",
+      "startDate": "Октябрь 2023",
+      "endDate": null
+    }
+  ],
+  "skills": [
+    { "name": "Linux" },
+    { "name": "Git" },
+    { "name": "GitLab" },
+    { "name": "GitLab CI" },
+    { "name": "GitHub Action" },
+    { "name": "Postgres" },
+    { "name": "MySQL/MariaDB" },
+    { "name": "Terraform" },
+    { "name": "OpenTofu" },
+    { "name": "Python" },
+    { "name": "C" },
+    { "name": "CMake" },
+    { "name": "Ansible" },
+    { "name": "Bash" }
+  ],
   "portfolio": [
     {
       "title": "Документация",
