@@ -8,7 +8,7 @@
   "portfolio": [
     {
       "title": "Документация",
-      "desctiprion": "Личная база знаний с ссылками на статьи",
+      "description": "Личная база знаний с ссылками на статьи",
       "technologies": ["mkdocs", "GitHub Action", "uv"],
       "link": "https://docs.vedmetskii.ru"
     }
