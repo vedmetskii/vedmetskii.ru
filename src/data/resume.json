@@ -1,7 +1,7 @@
 {
   "name": "Ведмецкий Кирилл Антонович",
   "title": "DevOps Engineer",
-  "location": "Санкт-Петербург",
+  "location": "Санкт-Петербург, Россия",
   "about": "Я middle DevOps инженер с трёх летним опытом, имею опыт с основными инструментами автоматизации. Есть опыт поддержки кубернетис кластра bare metal в течение 2 лет.",
   "experience": [
     {
@@ -26,7 +26,15 @@
     { "name": "C" },
     { "name": "CMake" },
     { "name": "Ansible" },
-    { "name": "Bash" }
+    { "name": "Bash" },
+    { "name": "K8s" },
+    { "name": "Argo CD" },
+    { "name": "Cloud Native PG" },
+    { "name": "Helm" },
+    { "name": "Alt Linux" },
+    { "name": "Ред ОС" },
+    { "name": "Astra Linux" },
+    { "name": "NixOS" }
   ],
   "portfolio": [
     {
