@@ -31,9 +31,21 @@
     { "name": "Argo CD" },
     { "name": "Cloud Native PG" },
     { "name": "Helm" },
+    { "name": "Nginx" },
+    { "name": "Envoy" },
+    { "name": "Docker" },
+    { "name": "Docker Compose" },
+    { "name": "Podman" },
+    { "name": "Podman Compose" },
+    { "name": "Grafana" },
+    { "name": "Prometheus" },
+    { "name": "Alertmanager" },
+    { "name": "Yandex Cloud" },
     { "name": "Opencode" },
     { "name": "Alt Linux" },
     { "name": "Ред ОС" },
+    { "name": "CentOS" },
+    { "name": "Ubuntu" },
     { "name": "Astra Linux" },
     { "name": "NixOS" }
   ],
@@ -48,8 +60,8 @@
   "education": [
     {
       "institution": "ИТМО",
-      "degree": "",
-      "field": "",
+      "degree": "Бакалавриат",
+      "field": "Инженер Информационной безопасности",
       "startDate": "2025",
       "endDate": "2029"
     }
